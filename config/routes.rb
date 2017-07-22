@@ -3,4 +3,6 @@ Rails.application.routes.draw do
     resources :states, only: [:index, :show]
     resources :cities, only: [:index, :show]
   end
+  get '/home', to: 'home#index'
+  root 'home#index'
 end
