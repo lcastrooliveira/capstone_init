@@ -8,7 +8,7 @@
 
   function StatesDirective(APP_CONFIG) {
     var directive = {
-      templateUrl: APP_CONFIG.state_html,
+      templateUrl: APP_CONFIG.states_html,
       replace: true,
       bindToController: true,
       controller: 'spa.states.StatesController',
