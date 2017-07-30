@@ -36,6 +36,6 @@ class StatesController < ApplicationController
   end
 
   def state_params
-    params.require(:state).permit()
+    params.require(:state).permit(:name)
   end
 end
