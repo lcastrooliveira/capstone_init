@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   scope :api, defaults: { format: :json } do
-    resources :states, only: [:index, :show]
-    resources :cities, only: [:index, :show]
+    resources :states
+    resources :cities
   end
   get '/home', to: 'home#index'
   root 'home#index'
